@@ -1,0 +1,225 @@
+%----------------------------------------------------------------------------------
+%            Część techniczna
+%----------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{casual}
+% optional argument are 
+% 	casual (default),
+% 	classic,
+% 	oldstyle, and
+% 	banking,
+% and 7 color schemes:
+% 	black,
+% 	blue,
+% 	green,
+% 	grey,
+% 	orange,
+% 	purple, and
+% 	red.
+
+
+% ustawienie kodowania
+\usepackage[utf8]{inputenc}
+%\usepackage[MeX]{polski}
+
+%=========================
+% Czcionki
+%=========================
+% 1. Antykwa toruńska light
+%\usepackage[OT4]{fontenc}
+%\usepackage[light,math]{anttor}
+% 2. ConcMath by D.Knuth
+%\setkomafont{subsection}{\usefont{T1}{fvm}{m}{n}}
+%\setkomafont{section}{\usefont{T1}{fvs}{b}{n}\Large}
+%\setcounter{secnumdepth}{0}
+
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+
+% 3. Antykwa Półtawskiego
+%\usepackage[OT4]{fontenc}
+%\usepackage{antpolt}  
+% 4. quattrocento
+%\usepackage[T1]{fontenc}
+%\usepackage{quattrocento}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2cm}	
+% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+% only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}         % required when changes are made to page layout lengths
+
+% nowe komendy
+\newcommand{\cvnewline}[2]{\cvline{\scriptsize{#1}}{#2}}
+\newcommand{\cvnewentry}[6]{\cventry{\scriptsize{#1}}{#2}{#3}{#4}{#5}{#6}}
+% C++
+\def\CPP{C\kern-.05em\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
+\def\CPPT{C\kern-.05em\raise.3ex\hbox{\textbf{{\large +}}\kern-.05em\textbf{{\large +}}}}
+\def\CPPS{C\kern-.05em\raise.3ex\hbox{\textbf{{\small +}}\kern-.05em\textbf{{\small +}}}}
+\def\PP{\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
+% C#
+\def\CS{C\kern-.05em\raise.25ex\hbox{\textbf{{\footnotesize \#}}}}
+\def\CSS{C\kern-.05em\raise.35ex\hbox{\textbf{{\small \#}}}}
+
+
+% =========================================================
+% Dane osobowe
+% =========================================================
+\firstname	{Jakub}
+\familyname	{Opatowski}
+\title		{C/\CPPT\ Software Engineer}						% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\address	{ul. Madalińskiego 67/20}{02-549 Warszawa} 	% Opcjonalne, zakomentuj jężeli niepotrzebne
+\mobile		{512 139 650}								% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\phone		{numer telefonu}							% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\fax		{fax (opcjonalnie)}							% Opcjonalne, zakomentuj jężeli niepotrzebne
+\email		{jakub.opatowski@gmail.com}					% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\extrainfo{http://nakat.ovh.org} 						% Opcjonalne, zakomentuj jężeli niepotrzebne
+
+% '64pt' is the height the picture must be resized to and 'picture' 
+% is the name of the picture file; optional, remove the line if not wanted
+\photo[64pt]{foto2.jpg}
+
+%\quote{\LARGE{Curriculum Vitae}}			% optional, remove the line if not wanted
+\nopagenumbers{}                           % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%----------------------------------------------------------------------------------
+%            Część merytoryczna
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+% =========================================================
+% Dane osobowe
+% =========================================================
+\section{Personal data}
+\cvnewline{Name}						{Jakub Opatowski}
+%\cvnewline{Date of birth}	{26 kwietnia 1983 rok}
+%\cvnewline{Adres zameldowania}		{ul. Dolna 11, 61-160 Czapury}
+%\cvnewline{Adres}					{ul. Madalińskiego 67/20, 02-549 Warszawa}
+\cvnewline{Mobile}					{512 139 650}
+\cvnewline{e-mail}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
+%\cvnewline{www}            {\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
+
+
+% =========================================================
+\section{Experience}
+% =========================================================
+
+\subsection{\href{http://rd.samsung.pl/}{Samsung Electronics Poland -- R\&D Center}}
+\cvnewentry{March~2013 -- September~2015}
+	{Software Development Engineer}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{Main designer of middleware solutions and quality assurance in project Tizen TV middleware}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Design, implementation and maintenance of middleware software in C/\CPP.
+		\item Perform the duties of project leader, project quality management.
+		\item Implementation of continuous integration techniques, managing testing environments.
+		\item Creating technical documentation for the projects.
+		\item Support and provide expertise in the use of SQL databases in middleware programs.
+	\end{itemize}
+}
+
+\subsection{\href{http://www.domdata.pl/}{DomData}}
+\cvnewentry{January~2009 -- November~2012}
+	{Programmer}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{From January 2009 to October 2012, seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} (now \href{https://www.mbank.pl/msp-korporacje/}{mBank}) Department of Information Technology Development in Warsaw as a banking systems programmer in C/\CPP\ and \CS~.NET.}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Implementation of technical solutions in C/\CPP/\CS\ according to the documentation.
+		\item Creating technical documentation for the projects.
+		\item Database design and creating applications for their management.
+		\item Managing unit test environment according to continuous integration principles.
+		\item Integration of new systems into the existing infrastructure of the banking system.
+	\end{itemize}
+}
+
+\subsection{\href{http://www.veraxsystems.com/pl}{Verax Systems Corp.}}
+\cvnewentry{July~2007 -- December~2008}
+	{Junior Programmer}
+	{}
+	{}
+	{Poznań}
+	{Software tester}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Design, development and administration of automated test environments for web applications.
+		\item Design, implementation and maintenance of the unit tests in \CPP\ language. 
+	\end{itemize}
+}	
+% =========================================================
+\section{Skills}
+% =========================================================
+
+\cvnewline{Programming languages}
+{
+\begin{itemize}
+	\item \textbf{C/\CPP}: Professional experience, knowledge of object-oriented techniques, design patterns and popular libraries like: STL, \href{http://www.boost.org}{Boost}, \href{http://qt.digia.com}{Qt4}. Knowledge of Visual Studio 2005/2008 and GNU development tools.
+	\item \textbf{Python}: Professional experience, knowledge of the extent necessary to automate processes to support software developing.
+	\item \textbf{SQL}: Professional experience, knowledge of database systems MSSQL, MySQL, SQLite and PostgreSQL.
+\end{itemize}
+}
+\cvnewline{Other}
+{
+\begin{itemize}
+	\item Knowledge of Tizen operating system.
+	\item Knowledge of specifications for digital television broadcasting standards DVB, ATSC and ISDB.
+	\item Version Control Systems: Git, Perforce, Subversion.
+	\item The typesetting system \LaTeXe.
+	\item Knowledge of UML.
+\end{itemize}
+}
+
+% =========================================================
+\section{Education}
+% =========================================================
+\cvnewentry{2002--2007}
+	{Poznan University of Technology}
+	{Main field of study: Mathematics}
+	{Specialization: Mathematical Methods of Computer Science.}
+	{Graduated with the degree of Master of Mathematics}
+	{}
+
+% =========================================================
+\section{Languages}
+% =========================================================
+\cvnewline{}
+{
+	\textbf{English}: Professional practice, writing technical documentation and professional articles, discussing design requirements.
+}
+
+% =========================================================
+\section{Interests}
+% =========================================================
+\cvnewline{Horse riding}{\small I am a member of the cavalry association named after the 7th Regiment of Mounted Riflemen Wielkopolska.}
+\cvnewline{Hobby}{\small Collecting comic books.}
+\cvnewline{Other}{\small Sci-fi and Fantasy books, music (Tom Waits, Dave Brubeck, AC/DC).}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% =========================================================
+%\section{Informacje dodatkowe}
+% =========================================================
+%\cvlistitem{Prawo jazdy kategorii B.}
+%\cvlistitem{Uregulowany stosunek do służby wojskowej.}
+
+\vfill
+\begin{center}
+\scriptsize Niniejszym wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w~moim CV przez firmę Verax Systems Sp. z o. o. mieszczącą się w Poznaniu przy ul. Pamiątkowej 2, do celów związanych z~procesem rekrutacji zgodnie z~Ustawą z~dnia 29 sierpnia 1997 roku o~Ochronie Danych Osobowych (Dz.~U.~z~2002~r.~Nr~101, poz.~926~ze~zm.). Wyrażam także zgodę na udostępnianie moich danych osobowych innym podmiotom z~ManpowerGroup oraz potencjalnym pracodawcom do celów związanych z~procesem rekrutacji. Przysługuje mi prawo dostępu do moich danych i~ich poprawiania.
+\end{center}
+
+\end{document}

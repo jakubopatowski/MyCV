@@ -1,0 +1,222 @@
+%----------------------------------------------------------------------------------
+%            Część techniczna
+%----------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{casual}
+% optional argument are 
+% 	casual (default),
+% 	classic,
+% 	oldstyle, and
+% 	banking,
+% and 7 color schemes:
+% 	black,
+% 	blue,
+% 	green,
+% 	grey,
+% 	orange,
+% 	purple, and
+% 	red.
+
+
+% ustawienie kodowania
+\usepackage[utf8]{inputenc}
+\usepackage[MeX]{polski}
+
+%=========================
+% Czcionki
+%=========================
+% 1. Antykwa toruńska light
+%\usepackage[OT4]{fontenc}
+%\usepackage[light,math]{anttor}
+% 2. ConcMath by D.Knuth
+%\setkomafont{subsection}{\usefont{T1}{fvm}{m}{n}}
+%\setkomafont{section}{\usefont{T1}{fvs}{b}{n}\Large}
+%\setcounter{secnumdepth}{0}
+
+\usepackage{concmath}
+\usepackage[T1]{fontenc}
+
+% 3. Antykwa Półtawskiego
+%\usepackage[OT4]{fontenc}
+%\usepackage{antpolt}  
+% 4. quattrocento
+%\usepackage[T1]{fontenc}
+%\usepackage{quattrocento}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{2cm}	
+% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}
+% only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}         % required when changes are made to page layout lengths
+
+% nowe komendy
+\newcommand{\cvnewline}[2]{\cvline{\scriptsize{#1}}{#2}}
+\newcommand{\cvnewentry}[6]{\cventry{\scriptsize{#1}}{#2}{#3}{#4}{#5}{#6}}
+% C++
+\def\CPP{C\kern-.05em\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
+\def\CPPT{C\kern-.05em\raise.3ex\hbox{\textbf{{\large +}}\kern-.05em\textbf{{\large +}}}}
+\def\CPPS{C\kern-.05em\raise.3ex\hbox{\textbf{{\small +}}\kern-.05em\textbf{{\small +}}}}
+\def\PP{\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
+% C#
+\def\CS{C\kern-.05em\raise.25ex\hbox{\textbf{{\footnotesize \#}}}}
+\def\CSS{C\kern-.05em\raise.35ex\hbox{\textbf{{\small \#}}}}
+
+
+% =========================================================
+% Dane osobowe
+% =========================================================
+\firstname	{Jakub}
+\familyname	{Opatowski}
+\title		{Programista C/\CPPT}						% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\address	{ul. Madalińskiego 67/20}{02-549 Warszawa} 	% Opcjonalne, zakomentuj jężeli niepotrzebne
+\mobile		{512 139 650}								% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\phone		{numer telefonu}							% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\fax		{fax (opcjonalnie)}							% Opcjonalne, zakomentuj jężeli niepotrzebne
+\email		{jakub.opatowski@gmail.com}					% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\extrainfo{http://nakat.ovh.org} 						% Opcjonalne, zakomentuj jężeli niepotrzebne
+
+% '64pt' is the height the picture must be resized to and 'picture' 
+% is the name of the picture file; optional, remove the line if not wanted
+\photo[64pt]{foto2.jpg}
+
+%\quote{\LARGE{Curriculum Vitae}}			% optional, remove the line if not wanted
+\nopagenumbers{}                           % uncomment to suppress automatic page numbering for CVs longer than one page
+
+%----------------------------------------------------------------------------------
+%            Część merytoryczna
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+% =========================================================
+% Dane osobowe
+% =========================================================
+\section{Dane osobowe}
+\cvnewline{Imię i nazwisko}			{Jakub Opatowski}
+%\cvnewline{Data urodzenia}			{26 kwietnia 1983 rok}
+%\cvnewline{Adres zameldowania}		{ul. Dolna 11, 61-160 Czapury}
+%\cvnewline{Adres}							{ul. Madalińskiego 67/20, 02-549 Warszawa}
+\cvnewline{Telefon}							{512 139 650}
+\cvnewline{e-mail}							{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
+%\cvnewline{www}            		{\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
+
+
+% =========================================================
+\section{Doświadczenie zawodowe}
+% =========================================================
+
+\subsection{\href{http://rd.samsung.pl/}{Samsung Electronics Poland -- R\&D Center}}
+\cvnewentry{marzec~2013 -- wrzesień~2015}
+	{Programista C/\CPPS}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{Główny projektant części bazodanowej i~zapewnienie jakości w~projekcie Tizen TV middleware.}
+\subsection{Obowiązki}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Projektowanie, implementacja i~utrzymywanie oprogramowania typu middleware w~języku C/\CPP.
+		\item Pełnienie obowiązków lidera projektu, zarzadzanie jakością w~projekcie.  
+		\item Tworzenie dokumentacji technicznej projektu.
+		\item Wsparcie techniczne i~zapewnienie wiedzy w~zakresie wykorzystania bazy danych SQLite.
+	\end{itemize}
+}
+
+\subsection{\href{http://www.domdata.pl/}{DomData}}
+\cvnewentry{styczeń~2009 -- listopad~2012}
+	{Programista C/\CPPS/\CSS}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{Od stycznia 2009 r. do października 2012 r. oddelegowany do pracy na rzecz \href{http://www.brebank.pl/}{BRE Bank SA} w~Departamencie Rozwoju Informatycznego w~Warszawie jako programista systemów bankowych w~językach C/\CPP\ i~\CS~.NET.}
+\subsection{Obowiązki}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Implementacja rozwiązań technicznych w~językach C/\CPP/\CS\ na podstawie dokumentacji.
+		\item Tworzenie dokumentacji technicznej projektu.
+		\item Projektowanie baz danych oraz aplikacji do ich zarządzania.
+		\item Utrzymywanie środowiska testów jednostkowych. 
+		\item Integracja nowych systemów z~istniejącą infrastrukturą systemu bankowego. 
+	\end{itemize}
+}
+
+\subsection{\href{http://www.veraxsystems.com/pl}{Verax Systems Corp.}}
+\cvnewentry{lipiec~2007 -- grudzień~2008}
+	{Młodszy Programista}
+	{}
+	{}
+	{Poznań}
+	{Tester oprogramowania, programista.}
+\subsection{Obowiązki}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Tworzenie, rozwój i~administracja zautomatyzowanych środowisk testowych dla aplikacji webowych.
+		\item Projektowanie, implementacja i~utrzymywanie testów jednostkowych w~języku \CPP. 
+	\end{itemize}
+}	
+% =========================================================
+\section{Umiejętności}
+% =========================================================
+
+\cvnewline{Języki programowania}
+{
+\begin{itemize}
+	\item \textbf{C/\CPP}: Doświadczenie zawodowe, znajomość języka z uwzględnieniem technik obiektowo orientowanych oraz popularnych bibliotek, m.in. STL, \href{http://www.boost.org}{Boost}, \href{http://qt.digia.com}{Qt4}. Znajomość narzędzi Visual Studio 2005/2008 oraz narzędzi programistycznych projektu GNU.
+	\item \textbf{Python}: Doświadczenie zawodowe, znajomość języka w~zakresie potrzebnym do automatyzacji procesów wspomagajacych programowanie.
+	\item \textbf{SQL}: Doświadczenie zawodowe, znajomość systemów baz danych MsSQL, MySQL, SQLite oraz PostgreSQL.
+\end{itemize}
+}
+\cvnewline{Inne}
+{
+\begin{itemize}
+	\item Znajomość systemu operacyjnego Tizen.
+	\item Znajomość specyfikacji standardów nadawania telewizji cyfrowej DVB, ATSC i~ISDB.
+	\item Systemy kontroli wersji, m.in.: git, Perforce, Subversion.
+	\item System składania tekstu \LaTeXe.
+\end{itemize}
+}
+
+% =========================================================
+\section{Wykształcenie}
+% =========================================================
+\cvnewentry{2002--2007}
+	{Politechnika Poznańska}
+	{Wydział Budowy Maszyn i~Zarządzania}
+	{Kierunek: Matematyka}
+	{Specjalizacja: Matematyczne Metody Informatyki}{Studia ukończone z~tytułem magistra matematyki.}
+
+% =========================================================
+\section{Języki}
+% =========================================================
+\cvnewline{}
+{
+	\textbf{Angielski}: Zaawansowany, poparty praktyką zawodową. Pisanie dokumentacji technicznej i~artykułów branżowych, omawianie wymagań projektowych.
+}
+
+% =========================================================
+\section{Zainteresowania}
+% =========================================================
+\cvnewline{Jazda konna}{\small Jestem członkiem Stowarzyszenia Kawaleryjskiego im. 7~Pułku Strzelców Konnych Wielkopolskich.}
+\cvnewline{Hobby}{\small Kolekcjonowanie komiksów.}
+\cvnewline{Inne}{\small Literatura sci-fi, film, muzyka (Tom Waits, Dave Brubeck, AC/DC).}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% =========================================================
+%\section{Informacje dodatkowe}
+% =========================================================
+%\cvlistitem{Prawo jazdy kategorii B.}
+%\cvlistitem{Uregulowany stosunek do służby wojskowej.}
+
+\vfill
+\begin{center}
+\scriptsize Niniejszym wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w~moim CV przez Uniwersytet im. Adama Mickiewicza w Poznaniu przy ul. Wieniawskiego 1, do celów związanych z~procesem rekrutacji zgodnie z~Ustawą z~dnia 29 sierpnia 1997 roku o~Ochronie Danych Osobowych (Dz.~U.~z~2002~r.~Nr~101, poz.~926~ze~zm.). Wyrażam także zgodę na udostępnianie moich danych osobowych innym podmiotom z~ManpowerGroup oraz potencjalnym pracodawcom do celów związanych z~procesem rekrutacji. Przysługuje mi prawo dostępu do moich danych i~ich poprawiania.
+\end{center}
+
+\end{document}

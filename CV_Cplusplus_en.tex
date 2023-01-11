@@ -20,7 +20,7 @@
 
 
 % ustawienie kodowania
-\usepackage[utf8]{inputenc}				
+\usepackage[utf8]{inputenc}
 %\usepackage[MeX]{polski}
 
 %=========================
@@ -31,7 +31,7 @@
 %\usepackage[light,math]{anttor}
 % 2. Antykwa toruńska
 \usepackage{concmath}
-\usepackage[OT4]{fontenc}
+\usepackage[T1]{fontenc}
 % 3. Antykwa Półtawskiego
 %\usepackage[OT4]{fontenc}
 %\usepackage{antpolt}  
@@ -51,9 +51,11 @@
 \newcommand{\cvnewline}[2]{\cvline{\scriptsize{#1}}{#2}}
 \newcommand{\cvnewentry}[6]{\cventry{\scriptsize{#1}}{#2}{#3}{#4}{#5}{#6}}
 % C++
-\def\CPP{C\kern-.05em\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
-\def\CPPT{C\kern-.05em\raise.3ex\hbox{\textbf{{\large +}}\kern-.05em\textbf{{\large +}}}}
-\def\CPPS{C\kern-.05em\raise.3ex\hbox{\textbf{{\small +}}\kern-.05em\textbf{{\small +}}}}
+\newcommand\CC{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}}
+\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+\def\CPP{C\kern-.05em\raise.35ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
+\def\CPPT{C\kern-.05em\raise.35ex\hbox{\textbf{{\large +}}\kern-.05em\textbf{{\large +}}}}
+\def\CPPS{C\kern-.05em\raise.35ex\hbox{\textbf{{\small +}}\kern-.05em\textbf{{\small +}}}}
 \def\PP{\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
 % C#
 \def\CS{C\kern-.05em\raise.25ex\hbox{\textbf{{\footnotesize \#}}}}
@@ -64,38 +66,101 @@
 % =========================================================
 \firstname	{Jakub}
 \familyname	{Opatowski}
-\title		{Software Engineer C/\CPPT}						% Opcjonalne, zakomentuj jężeli niepotrzebne
-\address	{ul. Madalińskiego 67/20}{02-549 Warszawa} 	% Opcjonalne, zakomentuj jężeli niepotrzebne
-\mobile		{512 139 650}								% Opcjonalne, zakomentuj jężeli niepotrzebne
-%\phone		{numer telefonu}							% Opcjonalne, zakomentuj jężeli niepotrzebne
-%\fax		{fax (opcjonalnie)}							% Opcjonalne, zakomentuj jężeli niepotrzebne
+\title		{C\texttt{++} Software Engineer}					% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\address	{Os. Stare Żegrze 75/21}{61-249 Poznań} 	% Opcjonalne, zakomentuj jężeli niepotrzebne
+\mobile		{\#48 512 139 650}							% Opcjonalne, zakomentuj jężeli niepotrzebne
 \email		{jakub.opatowski@gmail.com}					% Opcjonalne, zakomentuj jężeli niepotrzebne
-%\extrainfo{http://nakat.ovh.org} 						% Opcjonalne, zakomentuj jężeli niepotrzebne
+%\extrainfo	{http://nakat.ovh.org} 						% Opcjonalne, zakomentuj jężeli niepotrzebne
 
 % '64pt' is the height the picture must be resized to and 'picture' 
 % is the name of the picture file; optional, remove the line if not wanted
-\photo[64pt]{foto.jpg}
+\photo[64pt]{foto2.jpg}
 
-%\quote{\LARGE{Curriculum Vitae}}			% optional, remove the line if not wanted
-%\nopagenumbers{}                           % uncomment to suppress automatic page numbering for CVs longer than one page
+%\quote{\LARGE{Curriculum Vitae}}						% optional, remove the line if not wanted
+%\nopagenumbers{}										% uncomment to suppress automatic page numbering for CVs longer than one page
 
 %----------------------------------------------------------------------------------
 %            Część merytoryczna
 %----------------------------------------------------------------------------------
 \begin{document}
-\maketitle
 
+\maketitle
 % =========================================================
 % Dane osobowe
 % =========================================================
 \section{Personal data}
 \cvnewline{Name}					{Jakub Opatowski}
-\cvnewline{Date of birth}			{April 26, 1983}
+%\cvnewline{Date of birth}			{April 26, 1983}
 %\cvnewline{Adres zameldowania}		{ul. Dolna 11, 61-160 Czapury}
-\cvnewline{Adress}					{ul. Madalińskiego 67/20, 02-549 Warszawa}
-\cvnewline{Mobile}					{512 139 650}
+%\cvnewline{Adress}					{ul. Madalińskiego 67/20, 02-549 Warszawa}
+\cvnewline{Mobile}					{(\#48) 512 139 650}
 \cvnewline{e-mail}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
-%\cvnewline{www}                    	{\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
+%\cvnewline{www}					{\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
+
+ 
+% =========================================================
+\section{Experience}
+% =========================================================
+
+\subsection{\href{https://telbud.pl/}{Telbud SA} -- outsourced to \href{https://www.mikronika.pl/}{Mikronika Sp. z o.o.}}
+\cvnewentry{November 2015 - Present}{pierwszy nawias}{drugi nawias}{3 nawias}{4 nawias}{ 5 nawias}
+\subsection{\href{https://research.samsung.com/srpol}{Samsung Electronics Poland -- R\&D Center}}
+\cvnewentry{March~2013 -- September~2015}
+	{Software Development Engineer}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{Main designer of middleware solutions and quality assurance in project Tizen TV middleware}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Design, implementation and maintenance of middleware software in C\texttt{++}.
+		\item Perform the duties of project leader, project quality management.
+		\item Implementation of continuous integration techniques, managing testing environments.
+		\item Creating technical documentation for the projects.
+		\item Support and provide expertise in the use of SQL databases in middleware programs.
+	\end{itemize}
+}
+
+\subsection{\href{https://domdata.pl/}{DomData} -- outsourced to \href{https://www.mbank.pl/msp-korporacje/}{BreBank(now mBank)}}
+\cvnewentry{January~2009 -- November~2012}
+	{Programmer}
+	{}
+	{}
+	{Poznań/Warszawa}
+	{Seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} (now \href{https://www.mbank.pl/msp-korporacje/}{mBank}) Department of Information Technology Development in Warsaw as a banking systems programmer in C\texttt{++} and C\texttt{\#}~.NET.}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Implementation of technical solutions in C/\CPP/\CS\ according to the documentation.
+		\item Creating technical documentation for the projects.
+		\item Database design and creating applications for their management.
+		\item Managing unit test environment according to continuous integration principles.
+		\item Integration of new systems into the existing infrastructure of the banking system.
+	\end{itemize}
+}
+
+\subsection{\href{https://veraxsystems.com/}{Verax Systems Corp.}}
+\cvnewentry{July~2007 -- December~2008}
+	{Junior Programmer}
+	{}
+	{}
+	{Poznań}
+	{Software tester}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+	\begin{itemize}
+		\item Design, development and administration of automated test environments for web applications.
+		\item Design, implementation and maintenance of the unit tests in \CPP\ language. 
+	\end{itemize}
+}	
+
+% =========================================================
+\section{Skills}
+% =========================================================
 
 % =========================================================
 \section{Education}
@@ -103,128 +168,10 @@
 \cvnewentry{2002--2007}
 	{Poznan University of Technology}
 	{Main field of study: Mathematics}
-	{Specialization: Mathematical Methods of Computer Science.}
+	{Specialization: Mathematical Methods of Computer Science}
 	{Graduated with the degree of Master of Mathematics}
 	{}
-% =========================================================
-\section{Experience}
-% =========================================================
-
-\subsection{C/\CPPS/\CSS\ Software Engineer}
-\cvnewentry{January~2009 -- November~2012}
-	{Software Engineer}
-	{\href{http://www.domdata.pl/}{DomData Sp.~z~o.o., DomData Service Sp.~z~o.o., DomData~AG Sp.~z~o.o.}}
-	{ul.~Strzeszyńska 73/75}
-	{Poznań}
-	{From January 2009 to October 2012, seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} Department of Information Technology Development in Warsaw as a banking systems programmer in C/\CPP\ and \CS~.NET.}
-	
-	%=========================================================
-	\subsection{Detailed achievements}
-	%=========================================================
-	\cvnewline{}
-	{
-		%=========================================================
-		"Sepa": International system of money transfers in Euro.
-		\begin{itemize}
-			\item Implementing solutions in \CPP\ based on the specification.
-			\item Preparing the parsing, creating and validating XML file module, using a \href{http://xerces.apache.org/xerces-c/}{Apache Xerces-\CPP} library.
-			\item Maintaining and developing unit test environment, using \href{http://cppunit.sourceforge.net/doc/lastest/index.html}{CppUnit} library.
-			\item Integrating banking system Temenos - Globus with SEPA system, including: accounting, data flow and creating a reporting system using \CPP\ and JBASE.
-		\end{itemize}
-	}	
-	\cvnewline{}
-	{
-		%=========================================================
-		"Cash\&Trade": Factoring system.
-		\begin{itemize}
-			\item Implementing solutions in \CPP\ and \CS\ .Net based on the specification. 
-			\item Implementing RPC services in \CPP\ and WCF in \CS\ .NET to communicate with a Java Web programme (iBRE system). 
-			\item Preparing invoices scheme in Extensible Stylesheet Language (XSL).
-			\item Creating a module in \CPP\ and \CS\ .Net for parsing, creating and validating XML files. 
-			\item Validation and analysis of data, creating a \CPP\ system reports in XML and Excel files. 
-			\item Creating a communication module between the system Temenos -- Globus and "Cash\&Trade" server using \CPP, \CS\ .Net, using gSOAP library and WCF.
-		\end{itemize}
-	}
-	\cvnewline{}
-	{
-		%=========================================================
-		"CashFlow": The management and monitoring system of cash flow.
-		\begin{itemize}
-			\item Implementing solutions in \CPP\ based on the specification. 
-			\item Maintaining, editing and adding changes to the database in the MsSQL 2005/2008 along with ORM in C++.
-		\end{itemize}
-	}
-	\cvnewline{}
-	{
-		%=========================================================
-		Other projects in \CS/.Net, including Transaction Registry System (RTW) for BreBank employees, a~work-flow system for the organization of documents/tasks for Bre Bank employees - "BreWorkplace" and the programme to handle SORBNET messages – "BreSorb".
-		\begin{itemize}
-			\item Preparing specification and system design; application client - server using WCF services and database system MsSQL 2005. 
-			\item Implementing solutions in \CS. NET based on specification (BreSorb and BreWorkplace).
-			\item Handling data and develop a MsSQL 2005/2008 database using popular ORM tools: Entity Framework. NET 3.5 and LINQ to SQL (all projects).  
-			\item Preparation of the reporting system in Excel file format (RTW and BreSorb).
-		\end{itemize}
-	}
-
-
-\subsection{Junior Software Engineer, Tester}
-\cvnewentry{July~2007 -- December~2008}
-	{Junior Software Engineer}
-	{\href{http://www.veraxsystems.com}{Verax~Systems~EMEA~Sp.~z~o.o.}}
-	{ul.~Pamiątkowa~2}
-	{Poznań}
-	{Software Tester, Junior Software Engineer in \CPP}
-	
-	%=========================================================
-	\subsection{Detailed achievements}
-	%=========================================================
-	\cvnewline{}
-	{
-		Preparation of the automated test environment for  Revenue Assurance application (RA) for one of the largest telecommunication companies in Europe (Vodafone). The project was developed by an international Polish, Irish and Hungarian team.
-		\begin{itemize}
-			\item Implementing test cases based on the specification.
-			\item Preparing technical specification and documentation of automated tests in English. 
-			\item Analysis and preparation of guidelines and test cases during the telephone conference in English. 
-		\end{itemize}
-	}
-	\cvnewline{}
-	{
-		Preparing the test environment and automated unit tests for the \href{http://ever.eu/}{EVER} UPS management system.
-		\begin{itemize}
-			\item Preparing and design technical specification and test documentation.
-			\item Implementing test cases based on the specification.
-			\item Preparing the test environment, network configuration and equipment for testing.
-			\item Preparing UAT tests and presentation of the finished product to the customer.
-		\end{itemize}
-	}
-
-% =========================================================
-\section{Computer skills}
-% =========================================================
-
-\subsection{Programming languages}
-% C++ ===================================
-\cvnewline{C/\CPP}
-	{Proffesional experience, including knowledge of object-oriented techniques and popular libraries like \href{http://www.boost.org}{Boost}, \href{http://qt.digia.com}{Qt4}, \href{http://unittest-cpp.sourceforge.net/}{UnitTest\PP}. Knowledge of Visual Studio 2005/2008 and GNU development tools (compiler, make utility). Knowledge of \href{http://qt.digia.com/Product/Developer-Tools}{Qt Creator} - an integrated development environment, supporting application development using \CPP\ and Qt4 libraries.
-}
-% C# ===================================
-\cvnewline{\CS}
-	{Proffesional experience, including knowledge of object-oriented techniques and popular libraries like Autofac,  Quartz.NET, MS Entity Framework, LINQ to SQL and WCF. Knowledge of Visual Studio 2005/2008 and ReSharper.}
-% SQL ===================================
-\cvnewline{SQL}
-	{SQL query language along with popular relational database systems such as: MsSQL, MySQL, SQLite and PostgreSQL.}
-% MongoDB ===================================
-\cvnewline{\href{http://www.mongodb.org}{MongoDB}}
-	{Non-relational database that stores documents in \href{http://bsonspec.org}{BSON} format. Knowlage of drivers for popular languages \CPP, \CS\ .NET and Python. I have a certificate "MongoDB for Developers" in favor of the completion of the \href{https://education.10gen.com/}{training} organized by the \href{http://www.10gen.com}{10gen}, founder of the \href{http://www.mongodb.org}{MongoDB}.}
-% Narzędzia ===================================	
-\cvnewline{Tools}{Code documentation tool \href{http://www.doxygen.org}{Doxygen}, svn and git version control systems. Systems used to assist in the design of numerical and semi numerical algorithms, e.g. Matlab, Maple, Maxima.}
-
-\subsection{Other}
-% OS ===================================
-\cvnewline{OS}{Knowledge of Windows 95/98/Me/XP/Vista at an user and programmer level. Knowledge of Linux systems with particular emphasis on Fedora, CentOS and Ubuntu - an user and programmer level of knowledge. Knowledge of the AIX version 5.3/6.1. - user and programmer level of use.}
-% Biuro ===================================
-\cvnewline{Office}{Microsoft Office, Open Office, \href{http://www.gimp.org}{GIMP}. The professional typesetting system \LaTeXe\ using \href{http://miktex.org}{MikTeX} and TeXLive distributions with \href{http://texstudio.sourceforge.net/}{TeXstudio} and \href{http://www.texniccenter.org/}{TeXnicCenter} editing programs. Knowledge of vector drawing system \href{http://asymptote.sourceforge.net}{Asymptote}.}
-
+ 
 % =========================================================
 \section{Languages}
 % =========================================================
@@ -239,15 +186,10 @@
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
-% =========================================================
-\section{Additional information}
-% =========================================================
-\cvlistitem{Driving license.}
-\cvlistitem{Regulated military service.}
-
-\vfill
-\begin{center}
- I hereby give consent for the present and future processing of my personal data included in the submitted documents by IT KONTRAKT Sp. z. o. o., ul. Ostrowskiego 13, 53-238 Wrocław, for recruitment purposes. The consent is voluntary and I declare that I have been informed about my rights resulting from the Data Protection Act of the 29th of August 1997 (Journal of Laws 02.101.926.j.t.). 
-\end{center}
+% \vfill
+% \begin{center}
+%  I hereby give consent for the present and future processing of my personal data included in the submitted documents by IT KONTRAKT Sp. z. o. o., ul. Ostrowskiego 13, 53-238 Wrocław, for recruitment purposes. The consent is voluntary and I declare that I have been informed about my rights resulting from the Data Protection Act of the 29th of August 1997 (Journal of Laws 02.101.926.j.t.). 
+% \end{center}
 
 \end{document}
+ 
