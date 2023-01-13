@@ -50,23 +50,13 @@
 % nowe komendy
 \newcommand{\cvnewline}[2]{\cvline{\scriptsize{#1}}{#2}}
 \newcommand{\cvnewentry}[6]{\cventry{\scriptsize{#1}}{#2}{#3}{#4}{#5}{#6}}
-% C++
-\newcommand\CC{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}}
-\newcommand\CC{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
-\def\CPP{C\kern-.05em\raise.35ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
-\def\CPPT{C\kern-.05em\raise.35ex\hbox{\textbf{{\large +}}\kern-.05em\textbf{{\large +}}}}
-\def\CPPS{C\kern-.05em\raise.35ex\hbox{\textbf{{\small +}}\kern-.05em\textbf{{\small +}}}}
-\def\PP{\raise.3ex\hbox{\textbf{{\scriptsize +}}\kern-.05em\textbf{{\scriptsize +}}}}
-% C#
-\def\CS{C\kern-.05em\raise.25ex\hbox{\textbf{{\footnotesize \#}}}}
-\def\CSS{C\kern-.05em\raise.35ex\hbox{\textbf{{\small \#}}}}
 
 % =========================================================
 % Dane osobowe
 % =========================================================
 \firstname	{Jakub}
 \familyname	{Opatowski}
-\title		{C\texttt{++} Software Engineer}					% Opcjonalne, zakomentuj jężeli niepotrzebne
+\title		{C\texttt{++} Software Engineer}			% Opcjonalne, zakomentuj jężeli niepotrzebne
 %\address	{Os. Stare Żegrze 75/21}{61-249 Poznań} 	% Opcjonalne, zakomentuj jężeli niepotrzebne
 \mobile		{\#48 512 139 650}							% Opcjonalne, zakomentuj jężeli niepotrzebne
 \email		{jakub.opatowski@gmail.com}					% Opcjonalne, zakomentuj jężeli niepotrzebne
@@ -74,7 +64,7 @@
 
 % '64pt' is the height the picture must be resized to and 'picture' 
 % is the name of the picture file; optional, remove the line if not wanted
-\photo[64pt]{foto2.jpg}
+\photo[64pt]{foto3.jpg}
 
 %\quote{\LARGE{Curriculum Vitae}}						% optional, remove the line if not wanted
 %\nopagenumbers{}										% uncomment to suppress automatic page numbering for CVs longer than one page
@@ -88,75 +78,92 @@
 % =========================================================
 % Dane osobowe
 % =========================================================
-\section{Personal data}
-\cvnewline{Name}					{Jakub Opatowski}
+\section{Contact information}
+%\cvnewline{Name}					{Jakub Opatowski}
 %\cvnewline{Date of birth}			{April 26, 1983}
 %\cvnewline{Adres zameldowania}		{ul. Dolna 11, 61-160 Czapury}
 %\cvnewline{Adress}					{ul. Madalińskiego 67/20, 02-549 Warszawa}
 \cvnewline{Mobile}					{(\#48) 512 139 650}
-\cvnewline{e-mail}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
+\cvnewline{Email}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
 %\cvnewline{www}					{\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
 
  
 % =========================================================
-\section{Experience}
+\section{Work Experience}
 % =========================================================
 
 \subsection{\href{https://telbud.pl/}{Telbud SA} -- outsourced to \href{https://www.mikronika.pl/}{Mikronika Sp. z o.o.}}
-\cvnewentry{November 2015 - Present}{pierwszy nawias}{drugi nawias}{3 nawias}{4 nawias}{ 5 nawias}
-\subsection{\href{https://research.samsung.com/srpol}{Samsung Electronics Poland -- R\&D Center}}
-\cvnewentry{March~2013 -- September~2015}
-	{Software Development Engineer}
-	{}
-	{}
-	{Poznań/Warszawa}
-	{Main designer of middleware solutions and quality assurance in project Tizen TV middleware}
+\cvnewentry{November~2015 - Present}
+    {Software Development Engineer}
+    {}
+    {}
+    {Poznań}
+    {}
 \subsection{Responsibilities}
 \cvnewline{}
 {
-	\begin{itemize}
-		\item Design, implementation and maintenance of middleware software in C\texttt{++}.
-		\item Perform the duties of project leader, project quality management.
-		\item Implementation of continuous integration techniques, managing testing environments.
-		\item Creating technical documentation for the projects.
-		\item Support and provide expertise in the use of SQL databases in middleware programs.
-	\end{itemize}
+    \begin{itemize}
+        \item Design
+        \item Perform the duties of project leader, project quality management.
+        \item Implementation of continuous integration techniques, managing testing environments.
+        \item Creating technical documentation for the projects.
+        \item Support and provide expertise in the use of SQL databases in middleware programs.
+    \end{itemize}
+}
+
+\subsection{\href{https://research.samsung.com/srpol}{Samsung Electronics Poland -- R\&D Center}}
+\cvnewentry{March~2013 -- September~2015}
+    {Software Development Engineer}
+    {}
+    {}
+    {Warszawa}
+    {Main designer of middleware database solutions and quality assurance in project Tizen TV middleware}
+\subsection{Responsibilities}
+\cvnewline{}
+{
+    \begin{itemize}
+        \item Design, implementation and maintenance of middleware software in C\texttt{++}.
+        \item Perform the duties of project leader, project quality management.
+        \item Implementation of continuous integration techniques, managing testing environments.
+        \item Creating technical documentation for the projects.
+        \item Support and provide expertise in the use of SQL databases in middleware software.
+    \end{itemize}
 }
 
 \subsection{\href{https://domdata.pl/}{DomData} -- outsourced to \href{https://www.mbank.pl/msp-korporacje/}{BreBank(now mBank)}}
 \cvnewentry{January~2009 -- November~2012}
-	{Programmer}
-	{}
-	{}
-	{Poznań/Warszawa}
-	{Seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} (now \href{https://www.mbank.pl/msp-korporacje/}{mBank}) Department of Information Technology Development in Warsaw as a banking systems programmer in C\texttt{++} and C\texttt{\#}~.NET.}
+    {Programmer}
+    {}
+    {}
+    {Warszawa}
+    {Seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} (now \href{https://www.mbank.pl/msp-korporacje/}{mBank}) Department of Information Technology Development in Warsaw as a banking systems programmer in C\texttt{++} and C\texttt{\#}~.NET.}
 \subsection{Responsibilities}
 \cvnewline{}
 {
-	\begin{itemize}
-		\item Implementation of technical solutions in C/\CPP/\CS\ according to the documentation.
-		\item Creating technical documentation for the projects.
-		\item Database design and creating applications for their management.
-		\item Managing unit test environment according to continuous integration principles.
-		\item Integration of new systems into the existing infrastructure of the banking system.
-	\end{itemize}
+    \begin{itemize}
+        \item Implementation of technical solutions in C\texttt{++} and C\texttt{\#}~.NET according to the documentation.
+        \item Creating technical documentation for the projects.
+        \item Database design and creating applications for their management.
+        \item Managing unit test environment according to continuous integration principles.
+        \item Integration of new systems into the existing infrastructure of the banking system.
+    \end{itemize}
 }
 
 \subsection{\href{https://veraxsystems.com/}{Verax Systems Corp.}}
 \cvnewentry{July~2007 -- December~2008}
-	{Junior Programmer}
-	{}
-	{}
-	{Poznań}
-	{Software tester}
+    {Junior Programmer}
+    {}
+    {}
+    {Poznań}
+    {Software tester}
 \subsection{Responsibilities}
 \cvnewline{}
 {
-	\begin{itemize}
-		\item Design, development and administration of automated test environments for web applications.
-		\item Design, implementation and maintenance of the unit tests in \CPP\ language. 
-	\end{itemize}
-}	
+    \begin{itemize}
+        \item Design, development and administration of automated test environments for web applications.
+        \item Design, implementation and maintenance of the unit tests in C\texttt{++} language. 
+    \end{itemize}
+}
 
 % =========================================================
 \section{Skills}
@@ -166,23 +173,17 @@
 \section{Education}
 % =========================================================
 \cvnewentry{2002--2007}
-	{Poznan University of Technology}
-	{Main field of study: Mathematics}
-	{Specialization: Mathematical Methods of Computer Science}
-	{Graduated with the degree of Master of Mathematics}
-	{}
+    {Poznan University of Technology}
+    {Main field of study: Mathematics}
+    {Specialization: Mathematical Methods of Computer Science}
+    {Graduated with the degree of Master of Mathematics}
+    {}
  
 % =========================================================
 \section{Languages}
 % =========================================================
-\cvlanguage{\scriptsize{English}}{Very good}{Professional practice: writing technical documentation and professional articles, discussing design requirements.}
-
-% =========================================================
-\section{Interests}
-% =========================================================
-\cvnewline{Horse riding}{\small I am a member of the cavalry association named after the 7th Regiment of Mounted Riflemen Wielkopolska.}
-\cvnewline{Hobby}{\small Collecting comic books.}
-\cvnewline{Other}{\small Sci-fi books, film, music (Tom Waits, Dave Brubeck, AC/DC).}
+\cvlanguage{\scriptsize{English}}{B2}{Professional practice: writing technical documentation and professional articles, discussing design requirements.}
+\cvlanguage{\scriptsize{German}}{A1}{Self-learning language level}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
