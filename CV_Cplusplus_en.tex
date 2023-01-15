@@ -2,8 +2,8 @@
 %            Część techniczna
 %----------------------------------------------------------------------------------
 
-\documentclass[10pt,a4paper]{moderncv}
-\moderncvtheme[blue]{casual}
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
 % optional argument are 
 % 	casual (default),
 % 	classic,
@@ -22,6 +22,22 @@
 % ustawienie kodowania
 \usepackage[utf8]{inputenc}
 %\usepackage[MeX]{polski}
+
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={}
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!70,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=0mm,
+    boxsep=5pt,
+    arc=0pt,outer arc=0pt,
+    }
 
 %=========================
 % Czcionki
@@ -78,74 +94,66 @@
 % =========================================================
 % Dane osobowe
 % =========================================================
-\section{Contact information}
+%\section{Contact information}
 %\cvnewline{Name}					{Jakub Opatowski}
 %\cvnewline{Date of birth}			{April 26, 1983}
 %\cvnewline{Adres zameldowania}		{ul. Dolna 11, 61-160 Czapury}
 %\cvnewline{Adress}					{ul. Madalińskiego 67/20, 02-549 Warszawa}
-\cvnewline{Mobile}					{(\#48) 512 139 650}
-\cvnewline{Email}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
+%\cvnewline{Mobile}					{(\#48) 512 139 650}
+%\cvnewline{Email}					{\href{mailto:jakub.opatowski@gmail.com}{jakub.opatowski@gmail.com}}
 %\cvnewline{www}					{\href{http://programmersshaolin.blogspot.com}{programmersshaolin.blogspot.com}}
 
- 
 % =========================================================
 \section{Work Experience}
 % =========================================================
 
-\subsection{\href{https://telbud.pl/}{Telbud SA} -- outsourced to \href{https://www.mikronika.pl/}{Mikronika Sp. z o.o.}}
-\cvnewentry{November~2015 - Present}
+\subsection{\href{https://telbud.pl/}{Telbud S.A.} -- outsourced to \href{https://www.mikronika.pl/}{Mikronika Sp. z o.o.}}
+\cvnewentry{November~2015 -- Present}
     {Software Development Engineer}
-    {}
     {}
     {Poznań}
     {}
+    {Designer and programmer of \href{https://en.wikipedia.org/wiki/SCADA}{SCADA} IT systems.}
 \subsection{Responsibilities}
 \cvnewline{}
 {
     \begin{itemize}
-        \item Design
-        \item Perform the duties of project leader, project quality management.
-        \item Implementation of continuous integration techniques, managing testing environments.
-        \item Creating technical documentation for the projects.
-        \item Support and provide expertise in the use of SQL databases in middleware programs.
+        \item Preparing comprehensive solutions (analysis, design, implementation, tests, deployment) in accordance with customer requirements (including \href{https://pkpenergetyka.pl/en/page/company}{Tauron}, \href{https://www.enea.pl/}{Enea}, \href{https://pkpenergetyka.pl/en/page/company}{PKP Energetyka}).
+        \item Creating \href{https://en.wikipedia.org/wiki/SCADA}{SCADA} software using C\texttt{++} with \href{https://www.qt.io/product/framework}{Qt}, \href{https://www.boost.org/}{Boost}, \href{https://github.com/civetweb/civetweb}{CivetWeb}, \href{https://zeromq.org/}{ZeroMQ}, \href{https://github.com/catchorg/Catch2}{Catch2} libraries and tools: Visual Studio/Code, CMake, SVN/Git, Jira and Confluence.
+        \item Supporting clients in analyzing and solving ad hoc problems and failures in production environments.
     \end{itemize}
 }
 
 \subsection{\href{https://research.samsung.com/srpol}{Samsung Electronics Poland -- R\&D Center}}
-\cvnewentry{March~2013 -- September~2015}
+\cvnewentry{March~2013 -- September 2015}
     {Software Development Engineer}
     {}
-    {}
     {Warszawa}
-    {Main designer of middleware database solutions and quality assurance in project Tizen TV middleware}
+    {}
+    {Main designer of middleware database solutions and quality assurance in project \href{https://docs.tizen.org/}{Tizen TV} middleware.}
 \subsection{Responsibilities}
 \cvnewline{}
 {
     \begin{itemize}
         \item Design, implementation and maintenance of middleware software in C\texttt{++}.
         \item Perform the duties of project leader, project quality management.
-        \item Implementation of continuous integration techniques, managing testing environments.
-        \item Creating technical documentation for the projects.
-        \item Support and provide expertise in the use of SQL databases in middleware software.
+        \item Support and provide expertise in the use of SQL databases (mainly \href{https://www.sqlite.org/index.html}{SQLite}) in middleware software.
     \end{itemize}
 }
 
-\subsection{\href{https://domdata.pl/}{DomData} -- outsourced to \href{https://www.mbank.pl/msp-korporacje/}{BreBank(now mBank)}}
+\subsection{\href{https://domdata.pl/}{DomData AG Sp. z o.o.} -- outsourced to \href{https://www.mbank.pl/msp-korporacje/}{BreBank(now mBank)}}
 \cvnewentry{January~2009 -- November~2012}
     {Programmer}
     {}
-    {}
     {Warszawa}
-    {Seconded to work for the \href{http://www.brebank.pl/}{BRE Bank SA} (now \href{https://www.mbank.pl/msp-korporacje/}{mBank}) Department of Information Technology Development in Warsaw as a banking systems programmer in C\texttt{++} and C\texttt{\#}~.NET.}
+    {}
+    {Programmer responsible for the development and creation of new banking systems.}
 \subsection{Responsibilities}
 \cvnewline{}
 {
     \begin{itemize}
-        \item Implementation of technical solutions in C\texttt{++} and C\texttt{\#}~.NET according to the documentation.
-        \item Creating technical documentation for the projects.
-        \item Database design and creating applications for their management.
+        \item Implementation of solutions in C\texttt{++} and C\texttt{\#} languages using database systems (\href{https://jbase.com/solutions/database/}{JBase}, \href{https://www.microsoft.com/en-gb/sql-server}{MS Sql Server}) in accordance with the project requirements.
         \item Managing unit test environment according to continuous integration principles.
-        \item Integration of new systems into the existing infrastructure of the banking system.
     \end{itemize}
 }
 
@@ -153,8 +161,8 @@
 \cvnewentry{July~2007 -- December~2008}
     {Junior Programmer}
     {}
-    {}
     {Poznań}
+    {}
     {Software tester}
 \subsection{Responsibilities}
 \cvnewline{}
@@ -166,24 +174,24 @@
 }
 
 % =========================================================
-\section{Skills}
+%\section{Skills}
 % =========================================================
 
 % =========================================================
 \section{Education}
 % =========================================================
 \cvnewentry{2002--2007}
-    {Poznan University of Technology}
+    {\href{https://www.put.poznan.pl/}{Poznan University of Technology}}
     {Main field of study: Mathematics}
     {Specialization: Mathematical Methods of Computer Science}
-    {Graduated with the degree of Master of Mathematics}
+    {graduated with a master's degree of mathematics}
     {}
  
 % =========================================================
 \section{Languages}
 % =========================================================
-\cvlanguage{\scriptsize{English}}{B2}{Professional practice: writing technical documentation and professional articles, discussing design requirements.}
-\cvlanguage{\scriptsize{German}}{A1}{Self-learning language level}
+\cvlanguage{}{English -- B2}{Writing technical documentation and professional articles, discussing design requirements.}
+\cvlanguage{}{German -- A1}{Basic self-learning language level.}
 
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
 
